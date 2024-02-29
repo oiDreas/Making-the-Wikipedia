@@ -2,15 +2,11 @@ body, html {
     margin: 0;
     padding: 0;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    box-sizing: border-box;
 }
 ul { list-style: none; padding-left: 5px; }
 a { color:blue; text-decoration: none;}
-.bar {
-    background-color: #f9f9fb;
-    padding:15px;
-    border-top: solid 1px #cdcdcd;
-    border-bottom: solid 1px #cdcdcd;
-}
+
 .content {
     max-width: 1440px;
     margin: auto;
@@ -22,17 +18,158 @@ a { color:blue; text-decoration: none;}
     padding-left: 1rem;
     padding-right: 1rem;
 }
-.footer {
+footer {
     min-height: 100px;
     border-top: solid 1px #cdcdcd;
+    text-align: center;
+    margin-top: 100px;
 }
 .anchors {
     border-left: solid 1px #cdcdcd;
     padding-left: 15px;
+    align-items: center;
 }
+
 .sidebar {
     border-right: solid 1px #cdcdcd;
 }
 figure {
     text-align: center;
+}
+
+
+
+
+
+
+summary::-webkit-details-marker {
+    display: none
+}
+details {
+    margin-left: -16px;
+}
+details > p > a {
+    margin-left: 20px;
+}
+ul > li > a:hover {
+    color: burlywood;
+}
+details > summary > a:hover {
+    color: burlywood;
+}
+details > p > a:hover {
+    color: burlywood;
+}
+
+main > h1 {
+    text-align: center;
+}
+
+main > .aboutserie {
+    letter-spacing: 1px;
+    line-height: 24px;
+    font-size: 14px;
+}
+
+
+.author {
+    margin-left: 0px;
+    width: 215px;
+    height: 210px;
+    border: 1px solid lightgray;
+    background-color: lightgray;
+    display: inline-block;
+}
+.author > img {
+    margin-top: 2px;
+    width: 210px;
+    
+}
+.author > figcaption {
+    font-size: 12px;
+    text-align: left;
+    margin-left: 3px;
+}
+.author > figcaption > .author2 {
+    color: rgb(72, 72, 245);
+}
+
+.aboutauthor {
+    letter-spacing: 1px;
+    line-height: 24px;
+    font-size: 14px;
+    
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+
+/* Protagonistas */
+.protagonista {
+    margin-left: 0px;
+    width: 290px;
+    height: 210px;
+    border: 1px solid lightgray;
+    background-color: lightgray;
+    
+}
+.protagonista > figcaption {
+    font-size: 12px;
+    text-align: left;
+    margin-left: 3px;
+}
+.protagonista > figcaption > .author2 {
+    color: rgb(72, 72, 245);
+}
+
+
+.navigation{
+    display: flex;
+    gap: 4px;
+    
+}
+
+
+.busca {
+    border: 1px solid lightgray;
+    border-radius: 8px;
+    height: 38px;
+}
+.busca::placeholder {
+    padding: 4px;
+}
+
+.busca2 {
+    height: 38px;
+    width: 28px;
+    border-radius: 3px;
+    border: 1px solid lightgray;
+}
+.plat {
+    color: rgb(72, 72, 245);
+    text-transform: uppercase;
+}
+
+
+
+
+.cabecalho h3 {
+    text-align: center;
+    background-color: rgba(89, 223, 161, 0.712);
+}
+.cabecalho blockquote {
+    font-size: 12px;
+    text-align: center;
+    background-color: rgba(89, 223, 161, 0.712)
+}
+.cabecalho h6 {
+    background-color: rgba(89, 223, 161, 0.712);
+    text-align: center;
+}
+.blue {
+    color: blue;
 }
